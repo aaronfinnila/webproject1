@@ -1,0 +1,16 @@
+#header1 {
+  color: yellow;
+  text-shadow:
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  2px 2px 0 black;
+  font-size: 40px;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+}
+#bananaimg {
+  display: block;
+  margin: auto;
+}

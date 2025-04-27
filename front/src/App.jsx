@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import bananaImage from '/assets/bananas.png'
-import starImage from '/assets/star.png'
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom'
+import Home from './pages/Home'
+import Hanat from './pages/Hanat'
+import Navbar from './components/Navbar'
 
 const App = () => {
 
@@ -58,39 +59,13 @@ const App = () => {
   ]
 
   return (
-    <div>
-      <h1 id="header1">Banana</h1>
-      <img src={bananaImage} alt="banana" width="300" id="bananaimg"/>
-      <div className="bar-container">
-        {bars.map(bar => <Bar bar1={bar} key={bar.name}/>)}
-      </div>
-    </div>
-  )
-}
-
-const Bar = (props) => {
-  return (
-    <div>
-      <Header bar1={props.bar1} />
-      <Rating bar1={props.bar1} />
-    </div>
-  )
-}
-
-const Header = (props) => {
-  return (
-    <div>
-      <h2>{props.bar1.name}</h2>
-    </div>
-  )
-}
-
-const Rating = (props) => {
-  return (
-    <div className="Rating">
-      <p className="rating-text">{props.bar1.reviews.map(review => review.rating).reduce((total, current) => total + current)/props.bar1.reviews.length}</p>
-      <img src={starImage} alt="star" className="rating-img"/>
-    </div>
+    <Router>
+      <Navbar></Navbar>
+    <Routes>
+      <Route path="/" element={<Home bars={bars} />} />
+      <Route path="/hanat" element={<Hanat bars={bars}/>} />
+    </Routes>
+  </Router>
   )
 }
 

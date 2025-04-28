@@ -1,4 +1,3 @@
-import Bar from '/src/components/Bar'
 import Header from '/src/components/Header'
 
 const Home = (props) => {

@@ -20,10 +20,6 @@
 #header1 a:hover {
   color: blue;
 }
-#bananaimg {
-  display: block;
-  margin: auto;
-}
 #hana-nav {
   display: flex;
   justify-content: center;
@@ -47,6 +43,11 @@
 #hana-nav a:hover {
   color: blue;
 }
+#starImage {
+  width: 45px;
+  margin-top: 10px;
+  margin-left: -15px;
+}
 .bar-home-container {
   display: flex;
   align-items: center;
@@ -61,13 +62,63 @@
   margin-top: 250px;
   gap: 50px;
 }
-.Rating {
+.menu-container-header {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-top: -25px;
+  justify-content: center;
+  gap: 20px;
+  font-size: 50px;
+  color: green;
+  text-shadow:
+  1px 1px 0 black,
+  1px 1px 0 black,
+  1px 1px 0 black,
+  1px 1px 0 black;
 }
-.rating-img {
-  width: 15px;
-  margin-top: -2px;
+.menu-container-rating {
+  color: gray;
+  margin-left: 10px;
+}
+.menu-container-reviews {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  margin-top: 500px;
+  margin-bottom: 150px;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.review-name {
+  font-size: 25px;
+}
+.review-rating {
+  font-size: 24px;
+}
+.review-text {
+  margin-top: 20px;
+  max-width: 200px;
+  overflow-wrap: break-word;
+}
+.review-rating-star {
+  width: 20px;
+}
+.drink-header {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.hours {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
 }

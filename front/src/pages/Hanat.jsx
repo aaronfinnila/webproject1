@@ -1,26 +1,25 @@
-import Bar from '/src/components/Bar'
 import Header from '/src/components/Header'
+import Menu from '/src/components/Menu'
 import { useState, useEffect } from 'react'
 
 const Hanat = (props) => {
 
-    const [jolene, setJolene] = useState(false)
+    const [barstate, setBarstate] = useState('')
 
-    const changeJolene = () => {
-        console.log(jolene);
-        jolene ? setJolene(false) : setJolene(true)
+    const changeValue = (name) => {
+        console.log(name);
+        setBarstate(name)
     }
 
-    // fix bars map and make so it changes state only for said bar on click
     return (
-        <div>
+      <div>
         <div className="bar-hanat-container">
-          {props.bars.map(bar => (<button key={bar.name} onClick={changeJolene}>
+          {props.bars.map(bar => (<button key={bar.name} onClick={() => changeValue(bar.name)}>
             <Header bar1={bar} />
           </button>
         ))}
         </div>
-
+        <Menu bars={props.bars} barstate={barstate} />
       </div>
     )
 }

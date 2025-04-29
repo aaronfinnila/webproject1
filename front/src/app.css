@@ -97,7 +97,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 50px;
-  max-width: 1300px;
+  max-width: 100%;
   flex-wrap: wrap;
   margin-top: 75px;
   margin-bottom: 150px;

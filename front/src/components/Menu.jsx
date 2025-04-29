@@ -35,15 +35,27 @@ const Menu = (props) => {
                     }
                 </p>
             </div>
-            <div className="menu-container-hours">
+            <div>
                 {currentBar.hours.length > 0
                 ? <Hours hours={currentBar.hours} />
-                : ''
+                : ""
                 }
             </div>
+            <h1 className="menu-container-hanat">
+            {currentBar.hours.length > 0
+                ? "Hanat"
+                : ""
+                }
+                </h1>
             <div className="menu-container-drinks">
                 {currentBar.drinks.map(drink => <Drink dri={drink} key={getKeyValue()} />)}
             </div>
+            <h1 className="menu-container-arvostelut">
+            {currentBar.hours.length > 0
+                ? "Arvostelut"
+                : ""
+                }
+                </h1>
             <div className="menu-container-reviews">
                 {currentBar.reviews.map(review => <Review rev={review} key={getKeyValue()} />)}
             </div>

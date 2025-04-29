@@ -14,7 +14,7 @@ const Hanat = (props) => {
     return (
       <div>
         <div className="bar-hanat-container">
-          {props.bars.map(bar => (<button key={bar.name} onClick={() => changeValue(bar.name)}>
+          {props.bars.map(bar => (<button className="bar-button" key={bar.name} onClick={() => changeValue(bar.name)}>
             <Header bar1={bar} />
           </button>
         ))}

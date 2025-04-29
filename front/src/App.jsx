@@ -20,11 +20,15 @@ const App = () => {
       drinks: [
         {
           name: 'Ananaslonkero',
-          price: '5e'
+          price: '5€'
         },
         {
           name: 'Karhu',
-          price: '3e'
+          price: '3€'
+        },
+        {
+          name: 'Kelkka',
+          price: '5€'
         }
       ],
       reviews: [
@@ -43,22 +47,22 @@ const App = () => {
     {
       name: 'Calle',
       hours: [
-        '12-02',
-        '12-02',
-        '12-02',
-        '12-02',
-        '12-04',
-        '12-04',
-        '12-02',
+        'suljettu',
+        'suljettu',
+        '22-04',
+        'suljettu',
+        '23-04',
+        '23-04',
+        'suljettu',
     ],
       drinks: [
         {
           name: 'Ananaslonkero',
-          price: '5e'
+          price: '5€'
         },
         {
           name: 'Valkovenalainen',
-          price: '9e'
+          price: '9€'
         }
       ],
       reviews: [

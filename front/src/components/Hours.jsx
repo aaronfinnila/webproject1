@@ -1,7 +1,7 @@
 const Hours = (props) => {
     console.log(props.hours)
     return (
-        <div className="hours">
+        <div className="menu-container-hours">
             <div>{`Maanantai: ${props.hours[0]}`}</div>
             <div>{`Tiistai: ${props.hours[1]}`}</div>
             <div>{`Keskiviikko: ${props.hours[2]}`}</div>
